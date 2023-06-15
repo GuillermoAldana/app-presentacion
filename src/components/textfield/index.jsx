@@ -10,7 +10,7 @@ const TextfieldPresentacion = (props) => {
           value={value}
           onChange={onChange}
           name={name}
-          
+          type="text"
         />
      );
 }
