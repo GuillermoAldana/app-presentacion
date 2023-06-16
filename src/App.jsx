@@ -1,7 +1,7 @@
 import { CardContent, Grid, Typography } from "@mui/material";
 import { useState } from "react";
 import CardPresentacion from "./components/layout";
-import FormularioPresentacion from "./components/forms";
+import FormularioPresentacion from "./section/forms";
 import ChipAlert from "./components/chip";
 
 function App() {

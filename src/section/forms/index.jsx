@@ -1,16 +1,17 @@
 import { CardActions, CardContent, Divider, Grid, Typography } from "@mui/material";
 import { useState } from "react";
 import { USER_PROPERTIES } from "../../constants/initialValue";
-import CardPresentacion from "../layout";
-import ButtonPresentacion from "../button";
-import TitlePresentacion from "../typography";
-import TextfieldPresentacion from "../textfield";
+import CardPresentacion from "../../components/layout";
+import ButtonPresentacion from "../../components/button";
+import TitlePresentacion from "../../components/typography";
+import TextfieldPresentacion from "../../components/textfield";
 import PropTypes from 'prop-types';
-import SelectPresentacion from "../select";
+import SelectPresentacion from "../../components/select";
 
 const FormularioPresentacion = ({ setListOfUser, listOfUser }) => {
     const [user, setUser] = useState(USER_PROPERTIES);
     const [existError, setExistError] = useState(false);
+
     const handleChange = (e) => {
         const { value, name } = e.target;
         setUser({ ...user, [name]: value });
@@ -49,7 +50,7 @@ const FormularioPresentacion = ({ setListOfUser, listOfUser }) => {
                         <SelectPresentacion name={'Estado'} value={user.Estado} onChange={handleChange} />
                     </Grid>
                     <Grid item xs={12}>
-                        {existError ? <Typography variant="h6" color={'red'} style={{fontSize:'0.75rem', fontWeight:600}}>Complete todos los campos</Typography> : null}
+                        {existError ? <Typography variant="h6" color={'red'} style={{ fontSize: '0.75rem', fontWeight: 600 }}>Complete todos los campos</Typography> : null}
                     </Grid>
                 </Grid>
             </CardContent>

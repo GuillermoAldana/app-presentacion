@@ -1,14 +1,13 @@
 import { useState } from 'react';
-import CardPresentacion from '../layout';
+import { IMAGE, OBJETO_INICIAL } from '../../constants/config';
+
+import CardPresentacion from '../../components/layout';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import ButtonPresentacion from '../button';
-import TitlePresentacion from '../typography';
-import ParagraphPresentacion from '../paragraph';
-
-import { IMAGE, OBJETO_INICIAL } from '../../constants/config';
-
+import ButtonPresentacion from '../../components/button';
+import TitlePresentacion from '../../components/typography';
+import ParagraphPresentacion from '../../components/paragraph';
 
 export default function Presentacion() {
   const [data, setData] = useState(OBJETO_INICIAL);
