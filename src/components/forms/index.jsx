@@ -49,7 +49,7 @@ const FormularioPresentacion = ({ setListOfUser, listOfUser }) => {
                         <SelectPresentacion name={'Estado'} value={user.Estado} onChange={handleChange} />
                     </Grid>
                     <Grid item xs={12}>
-                        {existError ? <Typography variant="body1" color={'red'}>Complete todos los campos</Typography> : null}
+                        {existError ? <Typography variant="h6" color={'red'} style={{fontSize:'0.75rem', fontWeight:600}}>Complete todos los campos</Typography> : null}
                     </Grid>
                 </Grid>
             </CardContent>
