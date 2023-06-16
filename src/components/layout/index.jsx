@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const CardPresentacion = ({ children }) => {
     return (
-        <Card sx={{ maxWidth: 545 }}>
+        <Card sx={{ maxWidth: 545, marginTop: '1rem' }}>
             {children}
         </Card>
     );
@@ -12,5 +12,5 @@ const CardPresentacion = ({ children }) => {
 export default CardPresentacion;
 
 CardPresentacion.propTypes = {
-    children: PropTypes.element
+    children: PropTypes.node
 }
