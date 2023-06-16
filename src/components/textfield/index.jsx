@@ -11,6 +11,7 @@ const TextfieldPresentacion = (props) => {
           onChange={onChange}
           name={name}
           type="text"
+          fullWidth
         />
      );
 }
